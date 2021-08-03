@@ -1,0 +1,18 @@
+---
+title: "Predictive Modelling Literature"
+author: "Boyi Guo"
+date: "8/3/2021"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introductory Papers
++ @Steyerberg2014 introduced a 7-step pipeline for developing prediction models, where the authors advocated an _ABCD_ framework for model validation. The authors argued that caliberation (both calibration in the large and calibration slope), discrimination and clinical usefulness should be assessed for model validation purposes. Data collected in the GUSTO-I trial is used for illustration of model development. In the discussion sectio, the author also mentioned how to assess the improvement of a predictive model by adding new markers.
+
+
+## Reference
