@@ -11,8 +11,18 @@ bibliography:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Introductory Papers
+## Review Paper
+
+### Framework
 + @Steyerberg2014 introduced a 7-step pipeline for developing prediction models, where the authors advocated an _ABCD_ framework for model validation. The authors argued that caliberation (both calibration in the large and calibration slope), discrimination and clinical usefulness should be assessed for model validation purposes. Data collected in the GUSTO-I trial is used for illustration of model development. In the discussion sectio, the author also mentioned how to assess the improvement of a predictive model by adding new markers.
+
+
+### Metrics
++ @Steyerberg2010 reviewed many traditional and novel metrics for evaluating a predictive model to binary or survival outcomes. Evaluation of model extension with a marker are discussed and re-classificaition measures are encouraged to use. 
+  * Overall performace can be measured with Nagelkerke $R^2$, Birer score and variants
+  * Discrimination (accurate predictions for those with and w.o. outcome) can be measured with ROC and c statistics
+  * Calibration (agreement between observed and prediction) can be measured with calibration plot or goodness-of-fit measures.
+  * Clinical usefulness should be considered in assess predictive models
 
 
 ## Reference
