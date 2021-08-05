@@ -1,0 +1,17 @@
+---
+title: "Omics Lit Review"
+author: "Boyi Guo"
+date: "8/4/2021"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Transcriptomics
+
+## Overview
+- @Tachibana2015 a good review of modern transcriptomics sequencing technology and analytic challenges up to 2015. The author first stated the superiority of RNA-seq over microarray by providing more information, followed by a quick review of analytic challenges of RNA-seq data from NGS system. There are two way of RNA-seq data analysis: short-reads analysis (identify pathways but lose information) and long-reads analysis(assemble the short reads). Lastly, the author introduced  a novel concept __integromics__, on the bases of biologyical pipeline (DNA-> RNA -> protein) and nanostring tech for RNA-seq data analysis.
