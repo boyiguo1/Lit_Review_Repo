@@ -1,0 +1,15 @@
+---
+title: "Nonparametric Survival Models"
+author: "Boyi Guo"
+date: "8/10/2021"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cox Model
+- @Leng2006 is one among the earliest literature that expands nonparametric Cox models to the high-dimensional setting, where variable selection is of primary interests. The author applied component selection and smoothing operator method (COSSO) in the context of proportional hazard regression. The advantage of COSSO, in comparison to prior works say smoothing spline, is to shrink coefficients to be exactly zero, mirroring between LASSO and ridge regression. A gradient descent algorithm was provided for model fitting. The tuning of the model is achieved by selecting the smoothing parameter with the minimum approximate cross-validation score, a modification of cross-validation criterion. Another advantage of the proposed method is its ability to model effect of two variables as a surface, similar to ANOVA. The simulation considered a synthetic dataset with 8 variables, among which 5 are active (non-zero coefficient). Both correlation structure among predictors, censoring rate and sample size are considered.
