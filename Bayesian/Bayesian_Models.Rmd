@@ -1,0 +1,14 @@
+---
+title: "Bayesian Models"
+author: "Boyi Guo"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Review Papers
+- @Clyde2004 summarize the problems encountered in summarizing model uncertainty, particularly in Bayesian models. Bayesian Model uncertainty can be addressed roughly from two directions, variable selection and model averaging. Among these, variable selection uncertainty problem usually involves choosing hyperparameter, which can be mitigated via setting another prior in combination with empirical Bayes method or full Bayes method. Closed-form calculation is preferred over posterior sampling method beyond computation reasons. Regardless if the model uncertainty is via variable selection or model averaging, decision theory can be involved for decision making.
