@@ -1,7 +1,6 @@
 ---
 title: "Predictive Modelling Literature"
 author: "Boyi Guo"
-date: "8/3/2021"
 output: html_document
 bibliography:
   - bibliography.bib
@@ -23,6 +22,11 @@ knitr::opts_chunk$set(echo = TRUE)
   * Discrimination (accurate predictions for those with and w.o. outcome) can be measured with ROC and c statistics
   * Calibration (agreement between observed and prediction) can be measured with calibration plot or goodness-of-fit measures.
   * Clinical usefulness should be considered in assess predictive models
+
+
+## Integrative Modelling
+### Clinical Data
++ @Li2016 proposed a two-stage modelling approach to integrate clinical data and gene expression data when constructing predictive/prognostic models. On the basis of super leaner, the authors suggested to fit penalized models for clinical predictors and gene expression data respectively, and contstruct the final joint predictive model by using the linear predictors from previous marginal models. Two separate survival datasets, myelodysplasitc syndromes and ovarian cancer, are used to exam the proposed modelling approach, which renders "moderate" level of improvement on predicting the survival outcomes. Personally, the improvement is very moderate that it is hard to tell if it is due to randomness.
 
 
 ## Reference
