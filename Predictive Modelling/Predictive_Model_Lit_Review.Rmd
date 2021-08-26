@@ -6,6 +6,19 @@ bibliography:
   - bibliography.bib
 ---
 
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -13,20 +26,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Review Paper
 
 ### Framework
-+ @Steyerberg2014 introduced a 7-step pipeline for developing prediction models, where the authors advocated an _ABCD_ framework for model validation. The authors argued that caliberation (both calibration in the large and calibration slope), discrimination and clinical usefulness should be assessed for model validation purposes. Data collected in the GUSTO-I trial is used for illustration of model development. In the discussion sectio, the author also mentioned how to assess the improvement of a predictive model by adding new markers.
 
+-   @Steyerberg2014 introduced a 7-step pipeline for developing prediction models, where the authors advocated an *ABCD* framework for model validation. The authors argued that caliberation (both calibration in the large and calibration slope), discrimination and clinical usefulness should be assessed for model validation purposes. Data collected in the GUSTO-I trial is used for illustration of model development. In the discussion sectio, the author also mentioned how to assess the improvement of a predictive model by adding new markers.
 
 ### Metrics
-+ @Steyerberg2010 reviewed many traditional and novel metrics for evaluating a predictive model to binary or survival outcomes. Evaluation of model extension with a marker are discussed and re-classificaition measures are encouraged to use. 
-  * Overall performace can be measured with Nagelkerke $R^2$, Birer score and variants
-  * Discrimination (accurate predictions for those with and w.o. outcome) can be measured with ROC and c statistics
-  * Calibration (agreement between observed and prediction) can be measured with calibration plot or goodness-of-fit measures.
-  * Clinical usefulness should be considered in assess predictive models
 
+-   @Steyerberg2010 reviewed many traditional and novel metrics for evaluating a predictive model to binary or survival outcomes. Evaluation of model extension with a marker are discussed and re-classificaition measures are encouraged to use.
+
+    -   Overall performace can be measured with Nagelkerke $R^2$, Birer score and variants
+    -   Discrimination (accurate predictions for those with and w.o. outcome) can be measured with ROC and c statistics
+    -   Calibration (agreement between observed and prediction) can be measured with calibration plot or goodness-of-fit measures.
+    -   Clinical usefulness should be considered in assess predictive models
 
 ## Integrative Modelling
-### Clinical Data
-+ @Li2016 proposed a two-stage modelling approach to integrate clinical data and gene expression data when constructing predictive/prognostic models. On the basis of super leaner, the authors suggested to fit penalized models for clinical predictors and gene expression data respectively, and contstruct the final joint predictive model by using the linear predictors from previous marginal models. Two separate survival datasets, myelodysplasitc syndromes and ovarian cancer, are used to exam the proposed modelling approach, which renders "moderate" level of improvement on predicting the survival outcomes. Personally, the improvement is very moderate that it is hard to tell if it is due to randomness.
 
+### Clinical Data
+
+-   @Li2016 proposed a two-stage modelling approach to integrate clinical data and gene expression data when constructing predictive/prognostic models. On the basis of super leaner, the authors suggested to fit penalized models for clinical predictors and gene expression data respectively, and contstruct the final joint predictive model by using the linear predictors from previous marginal models. Two separate survival datasets, myelodysplasitc syndromes and ovarian cancer, are used to exam the proposed modelling approach, which renders "moderate" level of improvement on predicting the survival outcomes. Personally, the improvement is very moderate.
+
+-   @Zhang2017 proposed a two-stage modelling approach to integrate the pathway structure in prognostic models. The first stage is to fit pathway-level predictive models for each pathway, and use the pre-validated linear predictors in the second stage for an overall predicting model. Cross-validations are conducted at each stage of the framework. Improvements in real data are observed comparing to previous joint models that do not use pathway information. Besides prediction, pathway selection can be achieved. When clinical variables exists, they can be add in the second stage model. Overall, the paper is well-written. The rationale and significance of the proposed framework are well framed and discussed.
+
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+    1. I wonder how the two-stage framework compared to a groupped penalized model for example grouped lasso or grouped spike-and-slab model . The two-stage framework requires cross-validation at both stage, which not only increases the computational demands, but also enlarges the possibility of making mistakes. <br>
+    2. From the Appendix S2, we observe an improvement when adding clinical variables. However, we are not sure how much improvment there is comparing a clinical vairbale only model with a clinical + gene expression (pathway integrated) model. I antipate there is some improvement, linking to @Li2016. However, the improvement is not quantified in this paper.  <br>
+    3. The paper uses leave-one-out cross validation in the first stage when constructing linear predictors for pathways. Is there any harm/good when using a more sparse cross-validation, i.e. 10-fold. Moreover, LOOCV are used here to both select tuning parameter and also estimate the linear predcitor. Is it valid, concerning the difference between CV and nested CV? What bias it introduce here. 
+</p>
 
 ## Reference
