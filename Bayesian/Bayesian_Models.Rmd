@@ -6,9 +6,31 @@ bibliography:
   - bibliography.bib
 ---
 
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Review Papers
 - @Clyde2004 summarize the problems encountered in summarizing model uncertainty, particularly in Bayesian models. Bayesian Model uncertainty can be addressed roughly from two directions, variable selection and model averaging. Among these, variable selection uncertainty problem usually involves choosing hyperparameter, which can be mitigated via setting another prior in combination with empirical Bayes method or full Bayes method. Closed-form calculation is preferred over posterior sampling method beyond computation reasons. Regardless if the model uncertainty is via variable selection or model averaging, decision theory can be involved for decision making.
+
+
+# Bi-level Selection
+- @Mallick2017 proposed a group bridge type of prior for bi-level variable selection method, i.e.  penalizing at both the group level and the predictor level. Different from the previous Bayesian group bridge prior, the proposed prior allows group specific shrinkage, i.e. a regularization parameter each group, via a q-dimensional group bridge prior. Scale mixture of multivariate uniform representation was used for the proposed prior such that an efficient Gibbs sampler can be used to infer posterior distribution. Hyperpriors for the regularized parameter, also seen as tuning parameter, and concavity parameter were set up such that the tuning are automatic. The prior can be also applied to generalized models and composite group bridge model.
+
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+    The authors mentioned that the posterior distribution can be multimodal. How can we know when the posterior would be multimodal?
+</p>
