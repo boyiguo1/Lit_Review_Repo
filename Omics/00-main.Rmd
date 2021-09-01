@@ -1,7 +1,6 @@
 ---
 title: "Omics Lit Review"
 author: "Boyi Guo"
-date: "8/4/2021"
 output: html_document
 bibliography:
   - bibliography.bib

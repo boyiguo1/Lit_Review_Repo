@@ -1,0 +1,39 @@
+---
+title: "Misc"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+```{=html}
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+```
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reproducible Research
+
+-   @Heil2021 proposed three standards for improving reproducibility in quantitative research. The three standards describes where and how to store data, intermediate models, workflow management systems, and containerization. Moreover, the authors gave examples of incentives as a recognition of current status quo that extra efforts on reproducibility are not well recognized.
+
+<p class="comment">
+
+<strong>Personal Comments</strong> <br> 
+1. Interesting observations: 1) Publication of data: the authors mentioned that all data should be made publicly available in the bronze standard, but acknowledge there exists private data that can't be shared. 2) The authors introduced both R and python frameworks in different section of the work. <br> 
+2. The article only proposed the standards, but leave the question _how to set up an education module for this reproducibility standards_ open for discussion.
+3. Software design can be also informed from this article, particularly relavent to the privacy part. Many of the R function saves the input data as part of the model output, which leaves a privacy concern. The solution here can be very easy, set the output part to be null before saving the model. However, this indeed would be something to consider in R programming.
+</p>
+
+
+# References
