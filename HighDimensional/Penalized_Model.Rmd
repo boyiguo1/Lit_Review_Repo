@@ -1,0 +1,34 @@
+---
+title: "Penalized Models"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Bi-level Selection
+- @Breheny2009 proposed a new penalty for grouped predictors called group MCP (minimax concave penalty) and a novel algorithm called local coordinate descent algorithm. to fit group lasso, group bridge and group MCP. The group MCP was designed for mediating the inclusion/exclusion of a large-effect variable due to remaining weak signals in the group. There are three parameters for setting up group MCP, $lambda$, $a$, $b$, where the authors suggested to set $a=30$ for logistic regression. Model Effective degree of freedom estimation are provided. LCD shows superior computation performance over some existing algorithms (local linear approximation and local quadratic approximation). Extensive simulations were conducted to study the computation time, and different group penalties (group lasso, bridge and MCP). The simulation designs are very delicate. The authors concluded that group lasso relies to much group information while group MCP uses too little, which makes group bridge a good model to use. However, this conculsion can be used to suggest different modelling strategy when the assumption are different, e.g. strong belief in the groupping vs no belief in the grouping.
+
+for the proposed algorithm in comparison to previous algorithms 
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+1. The authors provided an very interesting way to understand group penalty by taking derivative of a compose function of group-level penalty and individual-level penalty. Applying combinations of bi-level penalties leads to different strategy for bi-level selection.<br>
+2. Oracle model refers to the unpenalized model where only non-zero are included.<br>
+3. The initial value of a model can be set as the estimates from the previous value of \(\lambda\), if the solution path is continuous.<br>
+</p>
