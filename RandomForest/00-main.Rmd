@@ -1,0 +1,43 @@
+---
+title: "Random Forests"
+author: "Boyi Guo"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Applied Analysis
+- @Yang2020 used the random forest model, in comparison to multivariate regression, CARET, Naive Bayes, etc, to predict cardiovascular disease risk in eastern China population. The authors concluded the random forest predict better than other methdos based on AUC.
+
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+1. The authors didn't follow a complete recommendation of examine predictive models. Instead, they focused on the discrimination measure AUC. <br>
+2. The authors use a split sample for training and testing the models, which lacks of rigorous. The authors mentioned a repetition of the split-samples in the conclusion section as a suggestion of what should be. However, it is not clear if the authors did it or not in their work.<br>
+3. The discussion the authors had on machine learning are un-rigorous at best. I would doubt if the authors has a good understanding on machine learning in general. 
+</p>
+
+- @Ooka2021 used the random forest model to predict Type 2 diabetes risk and extract variables that are highly predictive of Type 2 diabetes. 
+
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+1. I think this paper is flawed given that the article focuses on using random forest models to predict risk of T2DM, while the authors show lack of understanding of machine learning and predictive modelling principles in general.  <br>
+2. When the authors evaluated the predictive performance, only AUC, i.e. discrimination power of the models are examined. 3.  the way that the authors construct the training and testing samples are a hybrid of bootstraping and split sample. <br>
+3. The outcome is a continuous measure, HbA1c increase. However, the authors created several models to predict the HbA1c increase as discrete binary variables.
+</p>
