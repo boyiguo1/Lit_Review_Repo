@@ -1,5 +1,5 @@
 ---
-title: "Omics Lit Review"
+title: "Omics Lit Revie
 author: "Boyi Guo"
 output: html_document
 bibliography:
@@ -13,12 +13,12 @@ knitr::opts_chunk$set(echo = TRUE)
 # Transcriptomics
 
 ## Overview
-- @Tachibana2015 a good review of modern transcriptomics sequencing technology and analytic challenges up to 2015. The author first stated the superiority of RNA-seq over microarray by providing more information, followed by a quick review of analytic challenges of RNA-seq data from NGS system. There are two way of RNA-seq data analysis: short-reads analysis (identify pathways but lose information) and long-reads analysis(assemble the short reads). Lastly, the author introduced  a novel concept __integromics__, on the bases of biologyical pipeline (DNA-> RNA -> protein) and nanostring tech for RNA-seq data analysis.
+### Technology
+- @Tachibana2015 a good review of modern transcriptomics sequencing technology and analytic challenges up to 2015. The author first stated the superiority of RNA-seq over microarray by providing more information, followed by a quick review of analytic challenges of RNA-seq data from NGS system. There are two way of RNA-seq data analysis: short-reads analysis (identify pathways but lose information) and long-reads analysis(assemble the short reads). Lastly, the author introduced  a novel concept __integromics__, on the bases of biological pipeline (DNA-> RNA -> protein) and nanostring tech for RNA-seq data analysis.
 
+### Statistical Analysis
+- @Koch2018 provided a step-by-step guide to analyse RNA-seq data, where the authors named some software that accomplishes specific tasks in the  process. The overall message that the authors conveyed is to understand the output from softwares when running the data analysis, as a way to avoid misinterpretation.
 
 ## Visualization
 - @Gandolfo2018 proposed a new visualization tool that magnifies the unexpected variance to distinguish if there are additional effects. The development of the tool is based on the assumption that most of genes' expression levels are unrelated to the biological factors of interest, and yield a consistent pattern in the plot. If the data only reflects random variation, by removing the sample median, an robust estimator of the center, we can mostly observe a similar pattern of random variation. The interpretation of the plot is delicate. It is only interpretable if there is inconsistent patter in the graph without the identification of where the source of additional variation is.
 
-
-# Data Sets
-- @Le2020 created a database contains over 400 curated datasets for machine learning and statistical models benchmarking.
