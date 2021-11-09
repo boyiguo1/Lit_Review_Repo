@@ -22,3 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Visualization
 - @Gandolfo2018 proposed a new visualization tool that magnifies the unexpected variance to distinguish if there are additional effects. The development of the tool is based on the assumption that most of genes' expression levels are unrelated to the biological factors of interest, and yield a consistent pattern in the plot. If the data only reflects random variation, by removing the sample median, an robust estimator of the center, we can mostly observe a similar pattern of random variation. The interpretation of the plot is delicate. It is only interpretable if there is inconsistent patter in the graph without the identification of where the source of additional variation is.
 
+
+## Power & Sample Size calculation
+- @Poplawski2018 benchmarked 8 power and sample size (PSS) calculation tools for RNA-seq data analysis (by 2018) using synthetic datasets, where the authors considered various settings regarding size of pilot data, effect size in the context of fold changes, sequencing depth, amount of differential expressed genes, FDR control. As a conclusion, the authors concluded that the tools give widely different estimates on PSS and suggested to consider good pilot data, sequence depth and underlying effect size.
+ 
