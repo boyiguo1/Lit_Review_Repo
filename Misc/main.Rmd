@@ -39,4 +39,15 @@ knitr::opts_chunk$set(echo = TRUE)
 - @Le2020 created a database contains over 400 curated datasets for machine learning and statistical models benchmarking.
 
 
+
+# Professional Development
+## Leadership
+- @Satagopan2021 provided two case studies of how leadership manifest among interdisciplinary collaboration between biostatisticians/ data scientists and clinicians. Different advices were given for leaders who's a biostatistician and non-biostatistician. In general, the leader(s) of the group should set up infrastructures for clear communication and active listening. Meanwhile, they should be cognizant of the diverse needs and career path of the members, and delegate appropriate tasks.
+<p class="comment">
+
+<strong>Personal Comments</strong> <br> 
+Leadership is a two-way street, particularly for statisticians. The effort of statisticians in an collaborative team has been mostly underestimated and under-appreciated. It takes generations to train the following statisticians to know how much their efforts worth, and also to influence our collaborators to acknowledge their methodological they work with.
+</p>
+
+
 # References
