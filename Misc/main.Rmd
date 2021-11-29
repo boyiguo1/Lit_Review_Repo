@@ -23,6 +23,16 @@ font-style: italic;
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Machine Learning
+- @Whalen2021 systematically summarized five common pitfalls of machine learning practice in genomics research, which can also generalize to machine learning practice in large. The five pitfalls include: 1) distributional difference (e.g. batch effects when contrusting training-testing datasets), 2) dependent structure (e.g. leaking structural dependent samples in the testing data), 3) confoudning (e.g. do not account confounding in the analysis)  4)data leakage (e.g. preprocess training-testing data together) 5) unbalanced classes of the outcome (e.g. one label dominates the sample). While the aurguments mainly focus on how the pitfalls leads to inaccurate estimation of model performance, it is hard/yet to assess how the pitfalls affects identifying the biological relationship and by how much. In the conclusion, the authors discussed the connection between the pitfalls and offers optimistic cautious that even though the performance is estimated wrong, the identification of biology relationships could be right. But it is researchers' responsibility to be aware.
+
+<strong>Personal Comments</strong> <br> 
+As the authors mentioned in the article that ML heavily relies on cross-validation, where momajority of people take the randomized cross-valdiation as default and applied to any/most of the situation regardless if it is appropriate. There should be more thoughts put in planning the ML analysis, where cross-validation is a big component of it. 
+
+Moreover, it is important to have a baseline for comparison when evaluting the performance of ML models. In the situation where we are blind to the grand truth, we can use a simple technique by fitting model with perturbed data where there should be no signal at all.
+</p>
+
+
 # Reproducible Research
 
 -   @Heil2021 proposed three standards for improving reproducibility in quantitative research. The three standards describes where and how to store data, intermediate models, workflow management systems, and containerization. Moreover, the authors gave examples of incentives as a recognition of current status quo that extra efforts on reproducibility are not well recognized.
