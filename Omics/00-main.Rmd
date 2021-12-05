@@ -10,6 +10,13 @@ bibliography:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Metabolomics
+- @Seydel2021 introduces some current development of single-cell metabolomics, both technology and data analysis tools. Spatial resolved metabolomics gains attention nowadays, even though metabolomics in general is more challenging to study given its complexity and dynamic compared to genomics and transcriptomics. The author is optimistic about the future of metabolomics (particularly in clinic use) based on the argument mass spectrometry is cheaper compare to sequencing.
+
+
+
+
+
 # Transcriptomics
 
 ## Overview
