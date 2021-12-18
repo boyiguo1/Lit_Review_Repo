@@ -45,6 +45,15 @@ Moreover, it is important to have a baseline for comparison when evaluting the p
 3. Software design can be also informed from this article, particularly relavent to the privacy part. Many of the R function saves the input data as part of the model output, which leaves a privacy concern. The solution here can be very easy, set the output part to be null before saving the model. However, this indeed would be something to consider in R programming.
 </p>
 
+
+- @Peng2020 introduced the history of reproducible research and descirbed the difference between reproducibility and replicability. The goals and benefits of reproducible research were elaborated, where case studies were delivered to demonstrate the point: reproducibility doesn't improve past data anlysis, but contributes to future data analysis. Evaluation of the current code and data sharing was given where a vision on second phase of reproducible research is described: infrastructure development.
+
+<p class="comment">
+<strong>Personal Comments</strong> <br> 
+I am surprised by how many perspectives, besides replicability, the authors are able to tie reproducibility to. The inabilities of reprod' are mentioned. The authors maintain an optimistic&cautious attitude about data & code sharing.
+Rhetorically, great reading material. Content-wise, case studies pose counterintuitive conclusions but make sense if you read further. I wish the authors would give more caution abt data sharing. I'm stunned reprod' research has 30 y of history. Is trust a metric of science?
+</p>
+
 # Data sets
 - @Le2020 created a database contains over 400 curated datasets for machine learning and statistical models benchmarking.
 
