@@ -25,6 +25,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Review Paper
 
+- Wallisch2021 examined three machine learning frameworks (GAM, neural netwrok, boosting) in the context of predicting cardivascular risk to see if the ML models yields similar risk prediction for selected variables. The author designed experiments examining the effect of sample size. The authors concluded the ML models predict different risk for a predictor even when sample size are different. Limited sample size dis-stablize the risk prediction. The authors follows TRIPOD propotcal to report there prediction models, but did not mention about there computational environment at all. 
+
+<p class="comment">
+<strong>Personal Comments</strong> <br>
+    1. It is very interesting the TRIPOD doesn't enforce reporting software/package version and computational envrionment. Given this study didn't report those, I lose some of my trust of the results.
+
+    2. Many good references of predictive modelling are provided in the reference. For example, _Causal interpretations of black-box models_
+
+    3. It is also very interesting to think what causal assumption each ML model/ black box model implicit makes.
+</p>
+
+
+
+
 ### Framework
 
 -   @Steyerberg2014 introduced a 7-step pipeline for developing prediction models, where the authors advocated an *ABCD* framework for model validation. The authors argued that caliberation (both calibration in the large and calibration slope), discrimination and clinical usefulness should be assessed for model validation purposes. Data collected in the GUSTO-I trial is used for illustration of model development. In the discussion sectio, the author also mentioned how to assess the improvement of a predictive model by adding new markers.
