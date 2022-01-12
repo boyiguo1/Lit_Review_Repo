@@ -34,3 +34,6 @@ knitr::opts_chunk$set(echo = TRUE)
 <strong>Personal Comments</strong> <br>
     The authors mentioned that the posterior distribution can be multimodal. How can we know when the posterior would be multimodal?
 </p>
+
+# Effect Heredity
+- @Chipman2004 reviewed the effect heredity problem as a variable subsetting problem. Such problem happens when the variable selection has to follow certain structure, e.g. selecign interaction term only when main effects exists. The author promoted the Bayesian variable selection framework where such selection structure can be incorporated when setting up the prior distribution of the variable inclusion indicators. Modeling fitting process via MCMC was discussed for non-conjugate prior following the stochastic search variable selection idea of George adn McCulloch, and suggestions on hyperparameter selection were made.  
