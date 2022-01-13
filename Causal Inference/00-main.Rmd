@@ -1,0 +1,33 @@
+---
+title: "Causal Inference"
+author: "Boyi Guo"
+output: html_document
+bibliography:
+  - bibliography.bib
+---
+
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 55px;
+margin-right: 35px;
+border-radius: 5px;
+font-style: italic;
+}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Survival
+- @VanderWeele2011 reviewed the development of mediation analysis with survival outcome. The author explained that the definition of the mediation effect can happen at different scale, e.g. survival time vs hazard ratio, and cautioned the measures can varies across scales. The author also reviewed hazard mediation for additive hazard models verses proportional hazard model. Deriving estimates of mediated effect for PH modsel with traditional analytic approaches is challenging, in comparison to accecslated failure time models. However, the test would still be sound for PH models.
+
+- @Rudolph2020 While the main objective of the manuscript is to construct a tutorial on conducting simulation-based power calculation of mediation analysis with binary outcomes, the simulation studies in this article evaluate the power of 5 mediation estimators (Baron Kenny estimators and its extension, IORW, TMLE and the analytic equation) with respect to various settings of sample size, effect size, exposure-mediator interaction, mediator outcome confounding. The metrics were one-sided power and CI coverage. The author concludes that the power of an estimator varies drastically depending on the data generating mechanism; coverage can be used for indication of assumption violation, even though the estimator that doesn't violate the assumption can be inefficient, e.g. IORW. Lastly, the authors argue about the power and coverage trade-off.
+
+- [x] VanderWeele, T. J. (2020). Invited commentary: frontiers of power assessment in mediation analysis. American journal of epidemiology, 189(12), 1568-1570.
+
+- The author acknowledges the important initiative that Rudolph et al. (2020) took on establishing tutorials of calculating power and sample size calculation via simulation, where the analytic solution is too complicated. The author emphasizes the lack of comparable development of sample size calculation for mediation analysis. Meanwhile, the author criticised that the evaluation of Rudolph et al. (2020) doesn't match the most popular mediation analysis practice, and provides some feedback on perspectives that he would tackle. Lastly, the author summarized there are much more research needed to understand of trade-offs of different methodology more systematically.
