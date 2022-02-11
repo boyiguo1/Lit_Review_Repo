@@ -30,4 +30,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## other
 
+- @Bender2018 The author demonstrated using generalized additive model infrastructure to model time-to-event outcome via piece-wise exponential model. This modeling approach increases the utility, allowing spatial(-temporal) random effects and time-dependent covariates. The authors also introduced a utility R-package that does pre-process step of data before fitting to a generalized model. 
+
+
 - @Lefebvre2021 introduced the idea of fitting both Cox proportional model and Aalen additive hazard model when analyzing a dataset. Many references on how to evaluate the model fit were giving in the article both for the Cox model and Aalen Model. However, the authors made many exagerated claims on the performance of the proposed idea and other suggestions on usage of survival models without giving strong evidence or arguments. I personally don't like the article, besides the concrete of the citations. 
