@@ -33,6 +33,12 @@ Moreover, it is important to have a baseline for comparison when evaluting the p
 </p>
 
 
+- @Gelman2021 commented on 8 subjects in statistics that is considered the most important contributions in the past 50 years, which include counterfactual causal inference, overparameterized and regularized models, simulation-based inference, Bayesian multilevel models, generic algorithms, adaptive decision making, robust inference, exploratory data analysis. The authors also predicted the trend for future development.
+
+<strong>Personal Comments</strong> <br> 
+It is a very humble and humbling article. Nicely writen and throught provoking. It is very informative for people who's planning for their career path in statistics and research interests.
+</p>
+
 # Reproducible Research
 
 -   @Heil2021 proposed three standards for improving reproducibility in quantitative research. The three standards describes where and how to store data, intermediate models, workflow management systems, and containerization. Moreover, the authors gave examples of incentives as a recognition of current status quo that extra efforts on reproducibility are not well recognized.
