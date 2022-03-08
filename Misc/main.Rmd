@@ -23,6 +23,11 @@ font-style: italic;
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Data Analysis
+- @Baillie2022 suggest ten rules for data analysis. Particularly, the authors coined the term _initial data analysis_ to distinguish with the term _exploratory data analysis_. The ten rules are coherent and explained well to highlight their practicality and importance. Meanwhile, guidance and tools are provided, informing how to best follow these rules.  The manuscript serves as an important literature to awaken analysts how to conduct a good and proper analysis.
+
+The paper describes why the analysis are normally circular, even with a prespicified SAP. SAP provides an overall direction of the analysis and anchors the direction of the analysis via a clearly specified plan. However, in many situation there would be something unexpected happening during the analysis. Hence, following SAP should not be stiff, and should not be an reason analyst cut corner by not investigating some suspicious in the data analysis either. The work clearly said the SAP can be modified and improved. All these modification should be well-motivated and well-documented.
+
 # Machine Learning
 - @Whalen2021 systematically summarized five common pitfalls of machine learning practice in genomics research, which can also generalize to machine learning practice in large. The five pitfalls include: 1) distributional difference (e.g. batch effects when contrusting training-testing datasets), 2) dependent structure (e.g. leaking structural dependent samples in the testing data), 3) confoudning (e.g. do not account confounding in the analysis)  4)data leakage (e.g. preprocess training-testing data together) 5) unbalanced classes of the outcome (e.g. one label dominates the sample). While the aurguments mainly focus on how the pitfalls leads to inaccurate estimation of model performance, it is hard/yet to assess how the pitfalls affects identifying the biological relationship and by how much. In the conclusion, the authors discussed the connection between the pitfalls and offers optimistic cautious that even though the performance is estimated wrong, the identification of biology relationships could be right. But it is researchers' responsibility to be aware.
 
