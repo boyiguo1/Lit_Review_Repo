@@ -32,12 +32,12 @@ As the authors mentioned in the article that ML heavily relies on cross-validati
 Moreover, it is important to have a baseline for comparison when evaluting the performance of ML models. In the situation where we are blind to the grand truth, we can use a simple technique by fitting model with perturbed data where there should be no signal at all.
 </p>
 
-
-- @Gelman2021 commented on 8 subjects in statistics that is considered the most important contributions in the past 50 years, which include counterfactual causal inference, overparameterized and regularized models, simulation-based inference, Bayesian multilevel models, generic algorithms, adaptive decision making, robust inference, exploratory data analysis. The authors also predicted the trend for future development.
+- @Gelman2021 commented on the 8 subjects in stasitics that are considered the most important, including counterfactual causal inference, simulation-based inference, Overparameterized models and regularization, bayesain multilevel models, generic computation algorithms, adaptive decision analysis, robust inference and exploratory data analysis. While the authors summarized the previous breakthroughs, they also predict the future dvelopment. 
 
 <strong>Personal Comments</strong> <br> 
-It is a very humble and humbling article. Nicely writen and throught provoking. It is very informative for people who's planning for their career path in statistics and research interests.
+It is a very humble an humbling article. Fantastic read, and loads of history and references. Thought provoking in terms of planning for future career path and research interest.
 </p>
+
 
 # Reproducible Research
 
